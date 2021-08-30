@@ -1,26 +1,42 @@
 <template>
-  <InfoCard
-    imgSrc="https://images.unsplash.com/photo-1512850183-6d7990f42385?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    location="New York"
-    message="8117 Hotels"
-    avgPrice="255"
-  />
+  <Header />
+  <Navbar />
+  <MainWindow />
+  <Footer />
+  <Copyright />
+  <!-- <MessageWindow /> -->
+  <!-- <FaqList title="Bookings" /> -->
 </template>
 
 <script>
-import "./components/InfoCard.vue";
-import InfoCard from "./components/InfoCard.vue";
+import MainWindow from "./components/MainWindow.vue";
+import Header from "./components/Header.vue";
+import Navbar from "./components/Navbar.vue";
+import MessageWindow from "./components/MessageWindow.vue";
+import FaqList from "./components/FaqList.vue";
+import Footer from "./components/Footer.vue";
+import Copyright from "./components/Copyright.vue";
 export default {
   name: "App",
   components: {
-    InfoCard,
+    Header,
+    Navbar,
+    FaqList,
+    MessageWindow,
+    MainWindow,
+    Footer,
+    Copyright,
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
 #app {
-  display: flex;
-  justify-content: center;
+  font-family: "Poppins";
+}
+body {
+  margin: 0;
 }
 </style>
