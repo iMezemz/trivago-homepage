@@ -4,13 +4,19 @@
       src="https://theme.zdassets.com/theme_assets/196898/9addc16d02ae592b532d01410947d206e21ac2bf.png"
     />
     <ul>
-      <li>Home</li>
+      <li @click="emitToBookings">Home</li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    emitToBookings() {
+      this.$emit("gotoHome");
+    },
+  },
+};
 </script>
 
 <style scoped>

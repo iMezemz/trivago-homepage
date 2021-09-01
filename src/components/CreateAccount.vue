@@ -54,21 +54,31 @@ export default {
   height: 100%;
   top: 0;
   background-color: rgba(104, 104, 104, 0.562);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .prompt-container {
-  position: fixed;
-  width: 50%;
+  /*   
+  position: fixed; */
+  width: auto;
   height: auto;
-  top: 10%;
+  max-height: 80vh;
+
+  /* top: 5%;
   left: 25%;
+  right: 25%; */
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 20px;
   box-shadow: 1px 1px 5px 1px #0000001e;
   border-radius: 20px;
+  overflow-y: scroll;
+  margin: 5% 0;
 }
 #upper-row {
   display: flex;
@@ -109,7 +119,12 @@ img {
 }
 .main-input-view {
   padding: 0 5%;
-  padding-left: 40px;
+  /* padding-left: 40px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 #register {
   width: 200px;
